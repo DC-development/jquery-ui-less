@@ -1,0 +1,29 @@
+{
+  "name": "jquery-ui-twbs-less",
+  "description": "jQuery UI theme adaptive for Bootstrap",
+  "main": "",
+  "authors": [
+    "Gambit <gam6itko@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery-ui",
+    "bootstrap"
+  ],
+  "homepage": "https://github.com/gam6itko/jquery-ui-less",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependenciesDev": {
+    "bootstrap": "~3.3.5",
+    "jquery-ui": "~1.11.4"
+  }
+}
