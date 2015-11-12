@@ -34,3 +34,12 @@ The themes are downloaded here: http://bootswatch.com/yeti/.
 -----------
 
 the translation of the bootstrap vars should be done in jquery.ui.variables.less 
+
+
+## Contribution
+
+For build demo `demo.css` you chould exec.
+
+    bower install
+    npm install
+    grunt
