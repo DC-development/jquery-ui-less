@@ -11,6 +11,9 @@ module.exports = function (grunt) {
             }
         },
         watch: {
+            options: {
+                atBegin: true
+            },
             less: {
                 files: 'less/*.less',
                 tasks: ['less'],
