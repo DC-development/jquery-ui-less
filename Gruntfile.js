@@ -4,9 +4,6 @@ module.exports = function (grunt) {
     grunt.config.init({
         less: {
             dist: {
-                options: {
-                    compress: true
-                },
                 files: [
                     {expand: true, dest: 'demo', src: 'demo.less', ext: '.css'},
                 ]
