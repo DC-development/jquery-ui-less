@@ -75,8 +75,12 @@
 /* Icons (Uses font-icons)
 ----------------------------------*/
 .ui-icon {
-    &:extend(.glyphicon); // Mixin in the basic .glyphicon properties
+    &:extend(.btn);
     &:extend(.btn-sm);
+    &:extend(.glyphicon); // Mixin in the basic .glyphicon properties
+    height: auto;
+    width: auto;
+    text-indent: 0;
     padding: 0;
     top: 0;
 }
@@ -90,7 +94,7 @@ td > .ui-icon, {
     &:extend(.btn);
     &:extend(.btn-default);
     &:extend(.btn-sm);
-    line-height: auto !important;
+    //line-height: auto !important;
 }
 
 /* Misc visuals
