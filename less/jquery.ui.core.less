@@ -76,7 +76,7 @@
 ----------------------------------*/
 .ui-icon {
     &:extend(.btn);
-    &:extend(.btn-sm);
+    .button-size(@ui_iconPaddingVetical; @ui_iconPaddingHorizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
     &:extend(.glyphicon); // Mixin in the basic .glyphicon properties
     height: auto;
     width: auto;
@@ -93,7 +93,7 @@ span > .ui-icon,
 td > .ui-icon, {
     &:extend(.btn);
     &:extend(.btn-default);
-    &:extend(.btn-sm);
+    .button-size(@ui_iconPaddingVetical; @ui_iconPaddingHorizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
     //line-height: auto !important;
 }
 
