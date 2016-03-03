@@ -12,91 +12,99 @@
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden {
-  display: none;
+    display: none;
 }
+
 .ui-helper-hidden-accessible {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
+
 .ui-helper-reset {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  line-height: 1.3;
-  text-decoration: none;
-  font-size: 100%;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
 }
+
 .ui-helper-clearfix:before,
 .ui-helper-clearfix:after {
-  content: "";
-  display: table;
-  border-collapse: collapse;
+    content: "";
+    display: table;
+    border-collapse: collapse;
 }
+
 .ui-helper-clearfix:after {
-  clear: both;
+    clear: both;
 }
+
 .ui-helper-clearfix {
-  min-height: 0; /* support: IE7 */
+    min-height: 0; /* support: IE7 */
 }
+
 .ui-helper-zfix {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  opacity: 0;
-  filter:Alpha(Opacity=0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: Alpha(Opacity=0);
 }
 
 .ui-front {
-  z-index: 100;
+    z-index: 100;
 }
-
 
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-disabled {
-  cursor: default !important;
+    cursor: default !important;
 }
-
 
 /* Icons (Uses font-icons)
 ----------------------------------*/
 .ui-icon {
-  .glyphicon; // Mixin in the basic .glyphicon properties
-  .btn-sm;
-  padding:0;
-  top:0;
+    &:extend(.btn);
+    .button-size(@ui_iconPaddingVetical; @ui_iconPaddingHorizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+    &:extend(.glyphicon); // Mixin in the basic .glyphicon properties
+    height: auto;
+    width: auto;
+    text-indent: 0;
+    padding: 0;
+    top: 0;
 }
+
 /* states and images */
 .ui-widget-header .ui-icon,
 h3 > .ui-icon,
 div > .ui-icon,
 span > .ui-icon,
-td > .ui-icon,{
-  .btn;
-  .btn-default;
-  .btn-sm;
-  line-height: auto!important;
+td > .ui-icon, {
+    &:extend(.btn);
+    &:extend(.btn-default);
+    .button-size(@ui_iconPaddingVetical; @ui_iconPaddingHorizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
+    //line-height: auto !important;
 }
-
 
 /* Misc visuals
 ----------------------------------*/
 
 /* Overlays */
 .ui-widget-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

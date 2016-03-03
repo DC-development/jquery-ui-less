@@ -9,7 +9,7 @@
  * http://docs.jquery.com/UI/Accordion#theming
  */
 .ui-accordion .ui-accordion-header {
-	.panel-default .panel-heading;
+	&:extend(.panel-default > .panel-heading);
     font-size: @font-size-large;
     padding: 0.2em;
 }

@@ -1,6 +1,0 @@
-[submodule "bootstrap"]
-	path = bootstrap
-	url = https://github.com/twbs/bootstrap.git
-[submodule "jqueryUI"]
-	path = jqueryUI
-	url = https://github.com/jquery/jquery-ui.git
